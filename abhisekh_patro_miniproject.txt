@@ -1,0 +1,44 @@
+Respected Sir/Madam
+apologies for sending the project pretty late.Actually i was waiting for a reply from coderbyte as 
+i encountered a tech problem here as to complete the project i had to download docker file 
+but since it didnt ran without restarting the system which will lead to me being not able to submit
+the assesment so i tried using colab but there i could use docker properly so i tried docker webservice 
+
+but it was also time limited and i doubted that if i share the links of that too by the time it got 
+assesed it might have been deleted so i kept trying to see other ways then i worked on the things asked
+on web service and was waiting for a reply from tech team of coderbyte whom i mailed yesterday
+but i didnot get anything so i am submitting this text file and will explain how i will approach the
+problem
+
+1)we can create a git repo by first creating an account on git hub then we have to select which file 
+code we want to share so for the same file we will find its path and then we will copy that path.
+Then we go to git hub and create new repo and give it a name and other things like keeping it pub or
+private,etc.
+Then we open our cmd promt and there we set its path to the local folder path which has all the source 
+code files.
+
+Then we type>> git in it>> to intiate local folder as local git repo and then we use
+command>>then git add .>> to add all files to this local repo folder from local folder
+and then we will commit these files using>>git commit -m "first commit" and then we have to add a url 
+of the git repo which is at the repo that we create at git hub and paste it here
+>>git remote add origin URL
+then push the code to git hub using >>git push -u origin master
+then it will ask for the user id and password then it will be updated at the github.
+ 
+2)To add postgres to docker container we use command>>
+>>docker run --abhi some-postgres -e POSTGRES_PASSWORD=password -d postgres
+this will download the postgress image into the container 
+
+3)Then we can add jupyter labnotebook image into another container by creating another instance and 
+then  using command>>docker run -p 8888:8888 jupyter/scipy-notebook:33add21fab64
+this will create an image of jupyter notebook in container.
+
+4)we can make a connection between two containers through their network ids or there host names
+so that they can share data with each other.
+
+
+ABHISEKH PATRO
+MTECH AEROSPACE
+IIT KANPUR
+8260885669
+
